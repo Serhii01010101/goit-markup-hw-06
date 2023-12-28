@@ -26,6 +26,7 @@
           <a class="logo" href="./index.html"
             >Web<span class="half-logo">Studio</span></a
           >
+
           <ul class="site-nav">
             <li class="site-item">
               <a class="site-link active" href="">Portfolio</a>
@@ -40,18 +41,23 @@
         </nav>
         <address class="address">
           <ul class="address-item">
-            <li class="item">
-              <a class="address-main" href="mailto:info@devstudio.com"
+            <li class="addres-item">
+              <a class="address-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="item">
-              <a class="address-main" href="tel:+110001111111"
+            <li class="addres-item">
+              <a class="address-link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <a href="" class="menu-burder" href="#">
+          <svg class="icon-burger" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </a>
       </div>
     </header>
 
@@ -77,7 +83,7 @@
           <ul class="article-item">
             <li class="article-list">
               <div class="article-wrapper">
-                <svg class="reviews-icon" width="64" height="64">
+                <svg class="article-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -89,7 +95,7 @@
             </li>
             <li class="article-list">
               <div class="article-wrapper">
-                <svg class="reviews-icon" width="64" height="64">
+                <svg class="article-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -101,7 +107,7 @@
             </li>
             <li class="article-list">
               <div class="article-wrapper">
-                <svg class="reviews-icon" width="64" height="64">
+                <svg class="article-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -113,7 +119,7 @@
             </li>
             <li class="article-list">
               <div class="article-wrapper">
-                <svg class="reviews-icon" width="64" height="64">
+                <svg class="article-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -466,7 +472,7 @@
     </footer>
     <!-- Modal window -->
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="form-main">
         <button class="main-form-btn" type="button">
           <svg class="backdrop-close" width="8" height="8">
@@ -542,6 +548,93 @@
           <button class="form-btn" type="submit" disabled>Send</button>
         </form>
       </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <button class="menu-btn" aria-label="Close menu button">
+        <svg class="menu-btn-icon" width="24" height="24">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+
+      <ul class="menu-nav">
+        <li class="menu-nav-item">
+          <a href="" class="menu-nav-link">Studio</a>
+        </li>
+        <li class="menu-nav-item">
+          <a href="" class="menu-nav-link">Portfolio</a>
+        </li>
+        <li class="menu-nav-item">
+          <a href="" class="menu-nav-link">Contacts</a>
+        </li>
+      </ul>
+
+      <address class="menu-address">
+        <ul class="menu-address-list">
+          <li class="menu-address-item">
+            <a class="menu-address-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="menu-address-item">
+            <a class="menu-address-link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
+
+      <ul class="socials">
+        <li class="socials-item">
+          <a
+            href=""
+            class="socials-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram">
+            <svg class="socials-icon">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            href=""
+            class="socials-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter">
+            <svg class="socials-icon">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            href=""
+            class="socials-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="facebook">
+            <svg class="socials-icon">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            href=""
+            class="socials-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin">
+            <svg class="socials-icon">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
