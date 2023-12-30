@@ -40,8 +40,8 @@
           </ul>
         </nav>
         <address class="address">
-          <ul class="address-item">
-            <li class="addres-item">
+          <ul class="address-list">
+            <li class="address-item">
               <a class="address-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
@@ -139,7 +139,15 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-it">
             <li class="team-item">
-              <img src="./images/markguerrero.jpg" alt="man" width="264" />
+              <img
+                class="team-img"
+                srcset="
+                  ./images/tab/our-team/img-1.jpg    1x,
+                  ./images/tab/our-team/img-1@2x.jpg 2x
+                "
+                src="./images/tab/our-team/img-1.jpg"
+                alt="man"
+                width="264" />
               <div class="team-profile">
                 <h3 class="team-header">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
@@ -176,7 +184,15 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/tomford.jpg" alt="man" width="264" />
+              <img
+                class="team-img"
+                srcset="
+                  ./images/tab/our-team/img-2.jpg    1x,
+                  ./images/tab/our-team/img-2@2x.jpg 2x
+                "
+                src="./images/tab/our-team/img-2.jpg"
+                alt="man"
+                width="264" />
               <div class="team-profile">
                 <h3 class="team-header">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -213,7 +229,15 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/camilagarcia.jpg" alt="woman" width="264" />
+              <img
+                class="team-img"
+                srcset="
+                  ./images/tab/our-team/img-3.jpg    1x,
+                  ./images/tab/our-team/img-3@2x.jpg 2x
+                "
+                src="./images/tab/our-team/img-3.jpg"
+                alt="woman"
+                width="264" />
               <div class="team-profile">
                 <h3 class="team-header">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -250,7 +274,15 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/danielwilson.jpg" alt="man" width="264" />
+              <img
+                class="team-img"
+                srcset="
+                  ./images/tab/our-team/img-4.jpg    1x,
+                  ./images/tab/our-team/img-4@2x.jpg 2x
+                "
+                src="./images/tab/our-team/img-4.jpg"
+                alt="man"
+                width="264" />
               <div class="team-profile">
                 <h3 class="team-header">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
@@ -298,6 +330,11 @@
             <li class="portfolio-item">
               <div class="portfolio-wrapper">
                 <img
+                  class="portfolio-img"
+                  srcset="
+                    ./images/tab/portfolio/img-1.jpg    1x,
+                    ./images/tab/portfolio/img-1@2x.jpg 2x
+                  "
                   src="./images/banking-app.jpg"
                   alt="Banking App"
                   width="360" />
@@ -315,6 +352,11 @@
             <li class="portfolio-item">
               <div class="portfolio-wrapper">
                 <img
+                  class="portfolio-img"
+                  srcset="
+                    ./images/tab/portfolio/img-2.jpg    1x,
+                    ./images/tab/portfolio/img-2@2x.jpg 2x
+                  "
                   src="./images/cashless-paynment.jpg"
                   alt="Cashless Payment"
                   width="360" />
@@ -332,6 +374,11 @@
             <li class="portfolio-item">
               <div class="portfolio-wrapper">
                 <img
+                  class="portfolio-img"
+                  srcset="
+                    ./images/tab/portfolio/img-3.jpg    1x,
+                    ./images/tab/portfolio/img-3@2x.jpg 2x
+                  "
                   src="./images/mediation-app.jpg"
                   alt="Meditaion App"
                   width="360" />
@@ -349,6 +396,11 @@
             <li class="portfolio-item">
               <div class="portfolio-wrapper">
                 <img
+                  class="portfolio-img"
+                  srcset="
+                    ./images/tab/portfolio/img-4.jpg    1x,
+                    ./images/tab/portfolio/img-4@2x.jpg 2x
+                  "
                   src="./images/taxi-service.jpg"
                   alt="Taxi Service"
                   width="360" />
@@ -366,6 +418,11 @@
             <li class="portfolio-item">
               <div class="portfolio-wrapper">
                 <img
+                  class="portfolio-img"
+                  srcset="
+                    ./images/tab/portfolio/img-5.jpg    1x,
+                    ./images/tab/portfolio/img-5@2x.jpg 2x
+                  "
                   src="./images/screen-illustrations.jpg"
                   alt="Screen Illustrations"
                   width="360" />
@@ -383,6 +440,11 @@
             <li class="portfolio-item">
               <div class="portfolio-wrapper">
                 <img
+                  class="portfolio-img"
+                  srcset="
+                    ./images/tab/portfolio/img-6.jpg    1x,
+                    ./images/tab/portfolio/img-6@2x.jpg 2x
+                  "
                   src="./images/online-courses.jpg"
                   alt="Online Courses"
                   width="360" />
@@ -553,14 +615,14 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu">
       <button class="menu-btn" aria-label="Close menu button">
-        <svg class="menu-btn-icon" width="24" height="24">
+        <svg class="menu-btn-icon" width="8" height="8">
           <use href="./images/icons.svg#close"></use>
         </svg>
       </button>
 
       <ul class="menu-nav">
         <li class="menu-nav-item">
-          <a href="" class="menu-nav-link">Studio</a>
+          <a href="" class="menu-nav-link accent">Studio</a>
         </li>
         <li class="menu-nav-item">
           <a href="" class="menu-nav-link">Portfolio</a>
